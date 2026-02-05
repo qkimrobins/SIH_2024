@@ -1,0 +1,16 @@
+i have a project for the detection of micro plastics in water samples ,so my project is like :
+We will use 2 piezoelectric sensors for detecting microplastics in the sample
+using the vibrational signature.
+2. Then the analog signal intercepted by the sensors are transferred to the ADC
+module which converts them from analog to digital.
+3. Which is further transferred to our ESP32 module,which processes the data
+and perform FFT on the Data.
+4. Therefore classifying the detected objects as microplastics and non
+microplastics.
+5. These results are stored in our models memory which by using ML refines
+itself with time for more accurate results in future.
+6. These results are reflected in a design dashboard on a smart device in real
+time using wifi transmission.
+
+
+i have attached the model created by gemini to give a reference of the 3D model to be displayed in the video.So create a 3D model of this 2D model and explain the procedure and working of the model .use internet for more extra knowledge if needed ,make the video clear and sharp ,make the duration of the video to 3-4 minutes

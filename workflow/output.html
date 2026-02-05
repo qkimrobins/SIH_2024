@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta http-equiv='refresh' content='2'>
+<title>Acoustic Analysis System</title>
+<style>
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background-color: #f4f7f6; margin: 0; padding: 40px; color: #2d3436; }
+  .container { max-width: 1000px; margin: auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.05); }
+  header { text-align: center; margin-bottom: 50px; }
+  h1 { margin: 0; font-size: 2.2em; color: #1e272e; letter-spacing: -0.5px; border-bottom: 4px solid #00aaff; display: inline-block; }
+  .subtitle { color: #7f8c8d; margin-top: 10px; font-weight: 400; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-bottom: 50px; }
+  .card { padding: 30px 20px; border-radius: 15px; color: white; text-align: center; transition: 0.3s; }
+  .card:hover { transform: translateY(-5px); }
+  .card-label { font-size: 0.85em; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 15px; opacity: 0.8; }
+  .card-value { font-size: 1.7em; font-weight: 700; }
+  .bg-primary { background: linear-gradient(135deg, #485e75, #2c3e50); }
+  .bg-secondary { background: linear-gradient(135deg, #1e272e, #000000); }
+  .bg-accent { background: #1b4332; }
+  .info-section { border-top: 1px solid #edf2f7; padding-top: 40px; display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
+  table { width: 100%; border-collapse: collapse; }
+  th { text-align: left; color: #a0aec0; font-size: 0.8em; text-transform: uppercase; padding: 12px; }
+  td { padding: 15px 12px; border-bottom: 1px solid #f7fafc; font-size: 0.95em; }
+  .status-tag { padding: 4px 10px; border-radius: 20px; font-size: 0.8em; font-weight: bold; background: #e2e8f0; }
+  .footer { text-align: center; margin-top: 50px; color: #cbd5e0; font-size: 0.85em; }
+</style>
+</head>
+<body>
+<div class='container'>
+  <header>
+    <h1>Acoustic Frequency Analysis</h1>
+    <div class='subtitle'>Material Identification & Classification Interface</div>
+  </header>
+  <div class='grid'>
+    <div class='card bg-primary'><div class='card-label'>Detected Frequency</div><div class='card-value' style='color:#f7b731;'>42000.00 Hz</div></div>
+    <div class='card bg-secondary'><div class='card-label'>Classification Result</div><div class='card-value' style='color:#ff4d94;'>Microplastic</div></div>
+    <div class='card bg-accent'><div class='card-label'>Storage Category</div><div class='card-value'>PLASTIC BIN</div></div>
+  </div>
+  <div class='info-section'>
+    <div>
+      <h3 style='margin-top:0;'>Reference Frequency Spectrums</h3>
+      <table>
+        <tr><th>Acoustic Range</th><th>Target Material</th><th>System Status</th></tr>
+        <tr><td>40.5 kHz - 44.0 kHz</td><td>Microplastics (PET/PE)</td><td><span class='status-tag' style='color:#2d6a4f;'>ACTIVE</span></td></tr>
+        <tr><td>35.0 kHz - 40.0 kHz</td><td>Organic / Non-Plastic</td><td><span class='status-tag' style='color:#2d6a4f;'>ACTIVE</span></td></tr>
+        <tr><td>Undefined</td><td>Noise / Unknown</td><td><span class='status-tag'>MONITORING</span></td></tr>
+      </table>
+    </div>
+    <div style='text-align:center;'>
+       <div style='width:120px; height:120px; border: 12px solid #edf2f7; border-top-color: #00aaff; border-radius: 50%; margin:auto; display:flex; align-items:center; justify-content:center; animation: spin 2s linear infinite;'>
+         <span style='font-weight:bold; color:#2c3e50;'>RUNNING</span>
+       </div>
+    </div>
+  </div>
+  <div class='footer'>System Clock: 2026-01-22 04:26:33 | Data Analysis Engine v2.4</div>
+</div>
+</body>
+</html>
